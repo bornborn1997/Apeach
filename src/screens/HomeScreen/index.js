@@ -10,4 +10,4 @@ const index = () => {
   }
 
 
-export default indexr
+export default index
