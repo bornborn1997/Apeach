@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#b7b4df', 
     },
 
-    container_TERTIARY : {},
+
     text:  {
         fontWeight :'bold',
         color : 'white',
@@ -47,7 +47,16 @@ const styles = StyleSheet.create({
 
     text_TERTIARY : {
       color:'gray'
-    }
+    },
+
+    container_SECONDARY:{
+      borderColor: '#b7b4df',
+      borderWidth : 2,
+
+    },
+    text_SECONDARY : {
+      color: '#b7b4df',
+    },
 });
 
 export default CustomButton
