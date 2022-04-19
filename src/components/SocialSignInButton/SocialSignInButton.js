@@ -1,6 +1,8 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 import CustomButton from '../CustomButton';
+import KakaoSDK from '@actbase/react-kakaosdk';
+
 const SocialSignInButton = () => {
 
     const onSignInFacebook = () => {
@@ -9,8 +11,14 @@ const SocialSignInButton = () => {
     const onSignInGoogle = () => {
         console.warn('onSignInGoogle');
     };
-    const onSignInKakao = () => {
-        console.warn('onSignInKakao');
+    const onSignInKakao = async () => {
+      try {
+        await KakaoSDK.init('6cefd020d5887b45938e361905ff3f9b');
+        const tokens = await KakaoSDK.login();
+        return tokens;
+      } catch (e) {
+        console.log(e);
+      }
     };
     return (
       <>
