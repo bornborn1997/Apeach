@@ -9,6 +9,7 @@ import ConfirmEmailScreen from '../screens/ConfirmEmailScreen';
 import ForgotPasswordScreen from '../screens/ForgotPasswordScreen';
 import NewPasswordScreen from '../screens/NewPasswordScreen';
 import tabstackscreen from '../routers/Tabstackscreen';
+import SocialSignInButton from '../../src/components/SocialSignInButton';
 const Stack = createNativeStackNavigator();
 
 const Navigation = () => {

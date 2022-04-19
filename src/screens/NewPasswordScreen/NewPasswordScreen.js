@@ -3,7 +3,6 @@ import { Text, View, StyleSheet , ScrollView } from 'react-native';
 import { useState } from 'react/cjs/react.development';
 import CustomInput from '../../components/CustomInput';
 import CustomButton from '../../components/CustomButton';
-import SocialSignInButton from '../../components/SocialSignInButton';
 import { useNavigation } from '@react-navigation/native';
 
 const NewPasswordScreen = () => {

@@ -2,14 +2,16 @@ import React from 'react'
 import { Text, View } from 'react-native'
 import CustomButton from '../CustomButton';
 import KakaoSDK from '@actbase/react-kakaosdk';
+import { useNavigation } from '@react-navigation/native';
+
 
 const SocialSignInButton = () => {
-
+  const navigation = useNavigation();
     const onSignInFacebook = () => {
-        console.warn('onSignInFacebook');
+      navigation.navigate('Home');
     };
     const onSignInGoogle = () => {
-        console.warn('onSignInGoogle');
+      navigation.navigate('Home');
     };
     const onSignInKakao = async () => {
       try {
@@ -19,6 +21,7 @@ const SocialSignInButton = () => {
       } catch (e) {
         console.log(e);
       }
+      navigation.navigate('Home');
     };
     return (
       <>
