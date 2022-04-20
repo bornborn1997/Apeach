@@ -6,7 +6,7 @@ import { useNavigation } from '@react-navigation/native';
 
 
 const SocialSignInButton = () => {
-  const navigation = useNavigation();
+    const navigation = useNavigation();
     const onSignInFacebook = () => {
       navigation.navigate('Home');
     };
@@ -17,11 +17,11 @@ const SocialSignInButton = () => {
       try {
         await KakaoSDK.init('6cefd020d5887b45938e361905ff3f9b');
         const tokens = await KakaoSDK.login();
-        return tokens;
+        console.log(tokens) ;
       } catch (e) {
         console.log(e);
       }
-      navigation.navigate('Home');
+      //navigation.navigate('Home');
     };
     return (
       <>
@@ -45,4 +45,4 @@ const SocialSignInButton = () => {
   }
 
 
-export default SocialSignInButton
+export default SocialSignInButton;

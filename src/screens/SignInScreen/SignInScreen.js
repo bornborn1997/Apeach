@@ -7,6 +7,8 @@ import CustomButton from '../../components/CustomButton';
 import SocialSignInButton from '../../components/SocialSignInButton';
 import { useNavigation } from '@react-navigation/native';
 import Navigation from '../../navigation';
+
+
 const SignInScreen = () => {
   const [username, setUsername] = useState('');
   const [Password, setPassword] = useState('');
@@ -15,8 +17,6 @@ const SignInScreen = () => {
     const {height} = useWindowDimensions();
     const navigation = useNavigation();
     const onSignInPressed = () => {
-        
-
         navigation.navigate('Home');
     }
     const onForgotPasswordPressed = ()=>{

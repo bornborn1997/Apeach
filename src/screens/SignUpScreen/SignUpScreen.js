@@ -1,6 +1,5 @@
-import React, {userState} from 'react';
+import React, {useState} from 'react';
 import { Text, View, StyleSheet , ScrollView } from 'react-native';
-import { useState } from 'react/cjs/react.development';
 import CustomInput from '../../components/CustomInput';
 import CustomButton from '../../components/CustomButton';
 import SocialSignInButton from '../../components/SocialSignInButton';
@@ -45,7 +44,7 @@ const SignUpScreen = () => {
             value={username}
             setValue={setUsername}
            />
-              <CustomInput
+            <CustomInput
             placeholder = "이메일"
             value={email}
             setValue={setEmail}

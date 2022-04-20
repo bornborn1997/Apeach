@@ -40,17 +40,19 @@ const tabstackscreen = () => {
           tabBarOptions={{
             activeTintColor: '#b7b4df',
             inactiveTintColor: '#9b59b6',
+            showLabel : false,
             style : {
               position : 'absolute',
-              bottom : 25,
+              bottom : 125,
               left : 20,
               right : 20,
               elevation : 0,
-              backgroundcolor : '#ffffff',
+              backgroundColor : '#ffffff',
               borderRadius : 15,
               height : 90,
               
             }
+            
             
           }}>
          <TabStack.Screen name="Community" component={Community}/>
