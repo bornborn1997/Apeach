@@ -18,6 +18,22 @@ const tabstackscreen = () => {
         <TabStack.Navigator  screenOptions={({ route  }) => ({
            headerShown: false,
            
+            tabBarStyle : {
+              position : 'absolute',
+              bottom: 10,
+              borderRadius : 30,
+              backgroundColor : '#ffffff',
+            },
+
+            tabBarItemStyle : {
+              bottom : 25,
+              
+              //elevation : 0,
+              // backgroundColor : '#ffffff',
+              height : 100,
+              padding: 15,
+              
+            },
             tabBarIcon: ({ focused, color, size }) => {
               let iconName;
               let rn = route.name
@@ -36,23 +52,14 @@ const tabstackscreen = () => {
   
               return <Ionicons name={iconName} size={size} color={color} />;
             },
+
+
           })}
           tabBarOptions={{
+           
             activeTintColor: '#b7b4df',
             inactiveTintColor: '#9b59b6',
-            showLabel : false,
-            style : {
-              position : 'absolute',
-              bottom : 125,
-              left : 20,
-              right : 20,
-              elevation : 0,
-              backgroundColor : '#ffffff',
-              borderRadius : 15,
-              height : 90,
-              
-            }
-            
+            showLabel : true,
             
           }}>
          <TabStack.Screen name="Community" component={Community}/>
